@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+      </head>      
+    <body>
+        <a-scene background ="color:gray">
+            <a-camera wasd-controls-enabled="false" position="0 5 15" ></a-camera>
+            <a-asset-item id="tinker-obj" src="./assets/tinker.obj"></a-asset-item>
+            <a-asset-item id="obj-mtl" src="./assets/obj.mtl"></a-asset-item>
+        <a-entity obj-model="obj:#tinker-obj; mtl:#obj-mtl" position="5 0 0" rotation="-90 0 0" scale="0.1 0.1 0.1">
+        </a-entity> 
+    </a-scene>
+    </body>
+</html>
